@@ -17,13 +17,13 @@
             /* place-items: center; */
             background-color: lightblue;
             margin:15px;
-            width:70vh;
+            width:60%;
         }
         .navbar{
             padding: 10px;
             height:80px;
-            width:100vh;
-            font-size: 30pxj;
+            width:100%;
+            font-size: 22px;
             background-color: yellow;
             color:black;
         }
@@ -44,7 +44,28 @@
         .hidden{
             display:none;
         }
-       
+        @media screen and (max-width:760px) {
+            .navbar{
+                width:100%;
+            }
+            .note{
+                width:50%;
+            }
+            button.learn-more{
+                width:20%;
+            }
+        }
+        @media screen and (max-width:480px) {
+            .navbar{
+                width:100%;
+            }
+            .note{
+                width:50%;
+            }
+            button.learn-more{
+                width:30%;
+            }
+        }
     </style>
 </head>
 <body>
