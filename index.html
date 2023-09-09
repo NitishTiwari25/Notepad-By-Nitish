@@ -125,7 +125,7 @@
 
         //toggle using edit button
         textarea.value=text;
-        maindiv.innerHtml=text;
+        maindiv.innerHTML=text;
 
 
         editbutton.addEventListener('click',()=>{
@@ -137,6 +137,7 @@
         textarea.addEventListener('change',(event)=>{
             const value=event.target.value;
 
+            maindiv.innerHTML=value;
             //console.log(value);
 
             //update local storage area
